@@ -1,1 +1,60 @@
+/* Button */
+.btn {
+    align-content: center;
+    color: #234321;
+    display: block; 
+    width: max-content;
+    height: max-content;
+    padding: 10px 10px;
+    background: -webkit-linear-gradient(45deg, #5fe3db, #029eab);
+    background: linear-gradient(45deg, #5fe3db, #029eab);
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #fefefe;
+    border-radius: 12px;
+    box-shadow: 8px 8px 10px #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: none;
+    transform: scale(1);
+}
 
+.btn:active {
+    animation: hover infinite ease;
+}
+
+.btn:active {
+    animation: click 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover {
+    0% { 
+        border: 3px solid #fefefe;
+    }
+    50% { 
+        border: 6px solid #fefefe;
+    }
+    100% { 
+        border: 3px solid #fefefe;
+    }
+}
+
+@keyframes click {
+    0% { 
+        transform: scale(1);
+        box-shadow: 8px 8px 10px #000000;
+    }
+    50% { 
+        transform: scale(0.95);
+        box-shadow: 4px 4px 5px #000000;
+    }
+    100% { 
+        transform: scale(1);
+        box-shadow: 8px 8px 10px #000000;
+    }
+}
+
+/* Text */
