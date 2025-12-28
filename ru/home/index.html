@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+        
+        <title>Home</title>
+        
+        <!-- Для десктопов -->
+        <link rel="stylesheet" href="../../e/stl/desc/def.css" media="(min-width: 769px)"/>
+        <!-- Для мобильных -->
+        <link rel="stylesheet" href="../../e/stl/mob/def.css" media="(max-width: 768px)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Боковое меню для десктопа -->
+        <div class="desktop-menu">
+            <div class="menu-header">
+                <img src="../../e/icn/icon.png" alt="F" width="48" height="48"/>
+                <h2>Folltawn</h2>
+            </div>
+            <nav>
+                <a href="#" class="menu-item active">Главная</a>
+                <a href="https://folltawn.github.io/ru/projects/" class="menu-item">Проекты</a>
+                <a href="https://folltawn.github.io/ru/licenses/" class="menu-item">Лицензии</a>
+                <a href="https://folltawn.github.io/ru/about/" class="menu-item">О команде</a>
+            </nav>
+            <div class="menu-footer">
+                <p>&copy; 2025 Folltawn</p>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="content-wrapper">
+            <!-- Мобильный баннер (только для мобильных) -->
+            <div class="mobile-banner" id="mainBanner">
+                <img src="../../e/icn/icon.png" alt="F" width="40" height="40"/>
+                <h1 class="mobile-title">Folltawn</h1>
+                <!-- КНОПКА СПРАВА -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="content">
+                <div class="section">
+                    <h2>Folltawn</h2>
+                    <p>Команда разработчиков, создающая современное программное обеспечение.</p>
+                    <p>Наш первый проект — язык программирования <b>Pickle</b>. Сейчас он находится на стадии разработки, и пока выпущена только версия <b>1.0.0-alpha.1</b>.</p>
+                    <br>
+                    <span class="ln"></span>
+                    <br>
+                    <center>
+                        <a class="btn" href="https://folltawn.github.io/ru/project/">Проекты ⮕</a>
+                        <a class="btn" href="https://folltawn.github.io/ru/license/">Лицензии ⮕</a>
+                    </center>
+                </div>
+                
+                <div class="section">
+                    <h2>Links</h2>
+                    <p>Ниже можно найти ссылки на соцсети.</p>
+                    <br>
+                    <span class="ln"></span>
+                    <br>
+                    <center>
+                        <a class="btn" href="https://t.me/folltawn" target="blank">Telegram ⮕</a>
+                        <a class="btn" href="https://github.com/folltawn" target="_blank">GitHub ⮕</a>
+                    </center>
+                </div>
+                
+                <div class="footer">
+                    <p>All rights reserved &copy; 2025 Folltawn</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрытое) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="../../e/icn/icon.png" alt="F" width="48" height="48"/>
+                <h2>Folltawn</h2>
+                <button class="close-mobile-menu" id="closeMobileMenu">✕</button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="#" class="mobile-nav-item active">Главная</a>
+                <a href="https://folltawn.github.io/ru/projects/" class="mobile-nav-item">Проекты</a>
+                <a href="https://folltawn.github.io/ru/licenses/" class="mobile-nav-item">Лицензии</a>
+                <a href="https://folltawn.github.io/ru/about/" class="mobile-nav-item">О команде</a>
+            </nav>
+        </div>
+
+        <!-- Overlay для мобильного меню -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+
+        <script src="../../e/scr/nav.js"></script>
+    </body>
+</html>
