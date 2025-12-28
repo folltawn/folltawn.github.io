@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+        <script src="/e/scr/theme.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+        
+        <title>Something went wrong...</title>
+        <link rel="icon" type="image/png" href="/e/icn/icon.png">
+        
+        <link rel="stylesheet" href="/e/stl/themes.css"/>
+        <!-- Для десктопов -->
+        <link rel="stylesheet" href="/e/stl/desc/def.css" media="(min-width: 769px)"/>
+        <!-- Для мобильных -->
+        <link rel="stylesheet" href="/e/stl/mob/def.css" media="(max-width: 768px)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Боковое меню для десктопа -->
+        <div class="desktop-menu">
+            <div class="menu-header">
+                <img src="/e/icn/icon.png" alt="F" width="48" height="48"/>
+                <h2>Folltawn</h2>
+            </div>
+            <nav>
+                <a href="https://folltawn.github.io/ru/home/" class="nav-item">Русский</a>
+                <a href="https://folltawn.github.io/en/home/" class="nav-item">English</a>
+            </nav>
+            <div class="menu-footer">
+                <p>&copy; 2025 Folltawn</p>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="content-wrapper">
+            <!-- Мобильный баннер (только для мобильных) -->
+            <div class="mobile-banner" id="mainBanner">
+                <img src="/e/icn/icon.png" alt="F" width="40" height="40"/>
+                <h1 class="mobile-title">Folltawn</h1>
+                <!-- КНОПКА СПРАВА -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="content">
+                <div class="section">
+                    <h1 class="ttl">(×_×) Oops...</h1>
+                    <p>Looks like you weren't supposed to get here. Please select your preferred language using the buttons below.</p>
+                    <br>
+                    <span class="ln"></span>
+                    <br>
+                    <center>
+                        <a class="btn" href="https://folltawn.github.io/ru/home/">Русский ⮕</a>
+                        <a class="btn" href="https://folltawn.github.io/en/home/">English ⮕</a>
+                    </center>
+                </div>
+                
+                <div class="footer">
+                    <p>All rights reserved &copy; 2025 Folltawn</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрытое) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="/e/icn/icon.png" alt="F" width="48" height="48"/>
+                <h2>Folltawn</h2>
+                <button class="close-mobile-menu" id="closeMobileMenu">✕</button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="https://folltawn.github.io/ru/home/" class="mobile-nav-item">Русский</a>
+                <a href="https://folltawn.github.io/en/home/" class="mobile-nav-item">English</a>
+            </nav>
+        </div>
+
+        <!-- Overlay для мобильного меню -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+
+        <script src="/e/scr/nav.js"></script>
+    </body>
+</html>
