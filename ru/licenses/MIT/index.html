@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="/e/scr/theme.js"></script>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+        
+        <title>The MIT License</title>
+        <link rel="icon" type="image/png" href="/e/icn/icon.png">
+        
+        <link rel="stylesheet" href="/e/stl/themes.css"/>
+        <!-- Для десктопов -->
+        <link rel="stylesheet" href="/e/stl/desc/def.css" media="(min-width: 769px)"/>
+        <!-- Для мобильных -->
+        <link rel="stylesheet" href="/e/stl/mob/def.css" media="(max-width: 768px)"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Боковое меню для десктопа -->
+        <div class="desktop-menu">
+            <div class="menu-header">
+                <img src="/e/icn/icon.png" alt="F" width="48" height="48"/>
+                <h2>Folltawn</h2>
+            </div>
+            <nav>
+                <a href="https://folltawn.github.io/ru/home/" class="menu-item">Главная</a>
+                <a href="https://folltawn.github.io/ru/projects/" class="menu-item">Проекты</a>
+                <a href="#" class="menu-item active">Лицензии</a>
+                <a href="https://folltawn.github.io/ru/about/" class="menu-item">О команде</a>
+                <a href="https://folltawn.github.io/ru/settings/" class="menu-item">Настройки</a>
+            </nav>
+            <div class="menu-footer">
+                <p>&copy; 2025 Folltawn</p>
+            </div>
+        </div>
 
+        <!-- Основной контент -->
+        <div class="content-wrapper">
+            <!-- Мобильный баннер (только для мобильных) -->
+            <div class="mobile-banner" id="mainBanner">
+                <img src="/e/icn/icon.png" alt="F" width="40" height="40"/>
+                <h1 class="mobile-title">Folltawn</h1>
+                <!-- КНОПКА СПРАВА -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="content">
+                <div class="section">
+                    <h2>The MIT License</h2>
+                    <p>Текст лицензии MIT.</p>
+                </div>
+                
+                <div class="section">
+                    <h2>The MIT License</h2>
+                    <p><strong>MIT License</strong></p>
+                    <p><strong>Copyright (c) 2025 Folltawn</strong></p>
+                    <p>Данная лицензия разрешает лицам, получившим копию данного программного обеспечения и сопутствующей документации (в дальнейшем именуемыми «Программное Обеспечение»), безвозмездно использовать Программное Обеспечение без ограничений, включая неограниченное право на использование, копирование, изменение, слияние, публикацию, распространение, сублицензирование и/или продажу копий Программного Обеспечения, а также лицам, которым предоставляется данное Программное Обеспечение, при соблюдении следующих условий:</p>
+                    <p>Указанное выше уведомление об авторском праве и данные условия должны быть включены во все копии или значимые части данного Программного Обеспечения.</p>
+                    <p>ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ» («AS IS»), БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, ЯВНО ВЫРАЖЕННЫХ ИЛИ ПОДРАЗУМЕВАЕМЫХ, ВКЛЮЧАЯ ГАРАНТИИ ТОВАРНОЙ ПРИГОДНОСТИ, СООТВЕТСТВИЯ ПО ЕГО КОНКРЕТНОМУ НАЗНАЧЕНИЮ И ОТСУТСТВИЯ НАРУШЕНИЙ, НО НЕ ОГРАНИЧИВАЯСЬ ИМИ. НИ В КАКОМ СЛУЧАЕ АВТОРЫ ИЛИ ПРАВООБЛАДАТЕЛИ НЕ НЕСУТ ОТВЕТСТВЕННОСТИ ПО КАКИМ-ЛИБО ИСКАМ, ЗА УЩЕРБ ИЛИ ПО ИНЫМ ТРЕБОВАНИЯМ, В ТОМ ЧИСЛЕ, ПРИ ДЕЙСТВИИ КОНТРАКТА, ДЕЛИКТЕ ИЛИ ИНОЙ СИТУАЦИИ, ВОЗНИКШИМ ИЗ-ЗА ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ИНЫХ ДЕЙСТВИЙ С ПРОГРАММНЫМ ОБЕСПЕЧЕНИЕМ.</p>
+                </div>
+                
+                <div class="footer">
+                    <p>All rights reserved &copy; 2025 Folltawn</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Мобильное меню (скрытое) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="/e/icn/icon.png" alt="F" width="48" height="48"/>
+                <h2>Folltawn</h2>
+                <button class="close-mobile-menu" id="closeMobileMenu">✕</button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="https://folltawn.github.io/ru/home/" class="mobile-nav-item">Главная</a>
+                <a href="https://folltawn.github.io/ru/projects/" class="mobile-nav-item">Проекты</a>
+                <a href="#" class="mobile-nav-item active">Лицензии</a>
+                <a href="https://folltawn.github.io/ru/about/" class="mobile-nav-item">О команде</a>
+                <a href="https://folltawn.github.io/ru/settings/" class="mobile-nav-item">Настройки</a>
+            </nav>
+        </div>
+
+        <!-- Overlay для мобильного меню -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+
+        <script src="/e/scr/nav.js"></script>
+    </body>
+</html>
