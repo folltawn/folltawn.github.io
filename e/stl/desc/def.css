@@ -169,6 +169,13 @@ p, .txt {
     margin-bottom: 20px;
 }
 
+.back-menu {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0.7;
+}
+
 .btn {
     display: inline-flex;
     align-items: center;
