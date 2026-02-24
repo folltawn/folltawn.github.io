@@ -1,0 +1,86 @@
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #14141c;
+  --bg-tertiary: #1e1e2a;
+  --bg-accent: #2c2c3a;
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+  --bg-overlay-light: rgba(255, 255, 255, 0.05);
+
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b8;
+  --text-tertiary: #6b6b80;
+  --text-inverted: #0a0a0f;
+  --text-disabled: #4a4a5a;
+
+  --accent-primary: #6c5ce7;
+  --accent-secondary: #a29bfe;
+  --accent-tertiary: #4a3f9e;
+  --accent-glow: rgba(108, 92, 231, 0.4);
+  --accent-soft: rgba(108, 92, 231, 0.15);
+  --accent-soft-hover: rgba(108, 92, 231, 0.25);
+
+  --success: #00b894;
+  --success-soft: rgba(0, 184, 148, 0.15);
+  --warning: #fdcb6e;
+  --warning-soft: rgba(253, 203, 110, 0.15);
+  --error: #ff7675;
+  --error-soft: rgba(255, 118, 117, 0.15);
+  --info: #74b9ff;
+  --info-soft: rgba(116, 185, 255, 0.15);
+
+  --border-color-light: rgba(255, 255, 255, 0.08);
+  --border-color: rgba(255, 255, 255, 0.15);
+  --border-color-heavy: rgba(255, 255, 255, 0.25);
+}
+
+:root[data-th="light"] {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e9ecef;
+  --bg-accent: #dee2e6;
+  --bg-overlay: rgba(255, 255, 255, 0.8);
+  --bg-overlay-light: rgba(0, 0, 0, 0.02);
+
+  --text-primary: #212529;
+  --text-secondary: #495057;
+  --text-tertiary: #868e96;
+  --text-inverted: #ffffff;
+  --text-disabled: #adb5bd;
+
+  --accent-primary: #7048e8;
+  --accent-secondary: #9775fa;
+  --accent-tertiary: #5f3dc4;
+  --accent-glow: rgba(112, 72, 232, 0.3);
+  --accent-soft: rgba(112, 72, 232, 0.1);
+  --accent-soft-hover: rgba(112, 72, 232, 0.15);
+
+  --border-color-light: rgba(0, 0, 0, 0.05);
+  --border-color: rgba(0, 0, 0, 0.1);
+  --border-color-heavy: rgba(0, 0, 0, 0.2);
+}
+
+:root[data-th="night-lc"] {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #2d3a4f;
+  --bg-accent: #334155;
+  --bg-overlay: rgba(15, 23, 42, 0.9);
+  --bg-overlay-light: rgba(255, 255, 255, 0.02);
+
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-tertiary: #64748b;
+  --text-inverted: #0f172a;
+  --text-disabled: #475569;
+
+  --accent-primary: #38bdf8;
+  --accent-secondary: #7dd3fc;
+  --accent-tertiary: #0284c7;
+  --accent-glow: rgba(56, 189, 248, 0.25);
+  --accent-soft: rgba(56, 189, 248, 0.12);
+  --accent-soft-hover: rgba(56, 189, 248, 0.2);
+
+  --border-color-light: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-color-heavy: rgba(255, 255, 255, 0.1);
+}
