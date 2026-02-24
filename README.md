@@ -1,2 +1,2 @@
 # folltawn.github.io
-None
+The styles and design are [licensed](LICENSE).
