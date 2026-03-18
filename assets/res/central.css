@@ -1,0 +1,74 @@
+@import url("visual.css");
+
+/* themes.css — ФИКСИРОВАННАЯ ПАЛИТРА: оранжевый + зелёный */
+:root {
+    /* СВЕТЛАЯ ТЕМА */
+    --accent-orange: #f97316;        /* Основной оранжевый */
+    --accent-green: #22c55e;          /* Акцентный зелёный */
+    --accent-soft: #f9731610;          /* Полупрозрачный оранжевый */
+    
+    --bg-primary: #fefcf7;
+    --bg-secondary: #f3f4f8;
+    --text-primary: #1e1e2f;
+    --text-secondary: #4b5565;
+    --border-color: #e2e4e9;
+    --card-bg: #ffffff;
+    --nav-bg: #fffffff0;
+    --hover-bg: #e9eaf0;
+    --badge-bg: #e9eaf0;
+    --shadow-color: rgba(249, 115, 22, 0.08);  /* Оранжевая тень */
+    --glow-color: rgba(249, 115, 22, 0.15);
+}
+
+/* ТЁМНАЯ ТЕМА */
+[data-theme="dark"] {
+    --accent-orange: #fb923c;         /* Ярче для тёмной */
+    --accent-green: #4ade80;
+    --accent-soft: #fb923c20;
+    
+    --bg-primary: #0c121c;
+    --bg-secondary: #1a212e;
+    --text-primary: #edf2f7;
+    --text-secondary: #a0aec0;
+    --border-color: #2d3748;
+    --card-bg: #1a212e;
+    --nav-bg: #0f172ae0;
+    --hover-bg: #2a3442;
+    --badge-bg: #2d3748;
+    --shadow-color: rgba(251, 146, 60, 0.12);
+    --glow-color: rgba(251, 146, 60, 0.2);
+}
+
+/* НОЧНАЯ ТЕМА */
+[data-theme="night"] {
+    --accent-orange: #ff9f74;          /* Приглушённый оранжевый */
+    --accent-green: #6ee7b7;
+    --accent-soft: #ff9f7430;
+    
+    --bg-primary: #010409;
+    --bg-secondary: #0d1117;
+    --text-primary: #ffffff;
+    --text-secondary: #c9d1d9;
+    --border-color: #363b44;
+    --card-bg: #0f151f;
+    --nav-bg: #03060be0;
+    --hover-bg: #1f2937;
+    --badge-bg: #1f2937;
+    --shadow-color: rgba(255, 159, 116, 0.15);
+    --glow-color: rgba(255, 159, 116, 0.25);
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+* {
+    transition: background-color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                color 0.2s ease;
+}
