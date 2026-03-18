@@ -1,80 +1,220 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="ru">
 <head>
-    <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="/res/style/main.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folltawn · Dev Portfolio</title>
     
-    <title>Home</title>
-    <link rel="icon" type="image/png" href="/res/io/sqicon.png">
+    <!-- JetBrains Mono & Font Awesome 6.2 -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <!-- Наши стили -->
+    <link rel="stylesheet" href="/assets/res/central.css">
 </head>
 <body>
-    <main class="settings-page">
-        <div class="settings-header">
-            <h1>Folltawn Studio</h1>
-            <h6 style="display: inline; padding-left: 3px;">/</h6><p style="display: inline;">home</p>
-            <p class="lead">Творите в настоящем.</p>
-        </div>
 
-        <div class="card">
-            <h2>Стек</h2>
-            <p>Не все утилиты, представленные ниже, используются.</p>
+    <!-- НАВИГАЦИЯ -->
+    <nav class="navbar" id="mainNav">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="/assets/file/icon.png" alt="logo" class="logo-img"> 
+                <span>Folltawn.dev</span>
+            </a>
             
-            <br><hr><br>
-            
-            <a href="https://nim-lang.org/"><h3>Nim Language</h3></a>
-            <br>
-            <h5 style="display: inline;">Nim</h5> <p style="display: inline;">— компилируемый язык программирования со статической типизацией, поддерживающий процедурный, объектно-ориентированный, функциональный и обобщённый стили программирования.</p>
-            
-            <br><br><hr><br>
-            
-            <a href="https://html.spec.whatwg.org/multipage/"><h3>Web (HTML, JS, CSS)</h3></a>
-            <h6>Весь сайт сделан Folltawn</h6>
-            <br>
-            <h5 style="display: inline;">Web</h5> <p style="display: inline;">— технологическая основа интерфейса: HTML задаёт структуру, CSS отвечает за внешний вид, а JavaScript добавляет интерактивность и логику на стороне клиента.</p>
-            <br>
-            <h5 style="display: inline;">HTML</h5> <p style="display: inline;">— язык разметки, который указывает браузеру, какие элементы должны быть на странице и в каком порядке их отображать.</p>
-            <br>
-            <h5 style="display: inline;">CSS</h5> <p style="display: inline;">— язык стилей, с помощью которого оформляют веб-страницы.</p>
-            <br>
-            <h5 style="display: inline;">JS</h5> <p style="display: inline;">— язык программирования, который добавляет интерактивность на сайт.</p>
-            
-            <br><hr><br>
-            
-            <a href="https://python.org/"><h3>Python Language</h3></a>
-            <br>
-            <h5 style="display: inline;">Python</h5> <p style="display: inline;">— интерпретируемый высокоуровневый язык программирования общего назначения.</p>
-            
+            <div class="nav-links" id="navLinks">
+                <a href="/" class="active"><i class="fa-solid fa-code"></i> <span data-i18n="nav.home">Главная</span></a>
+                <a href="/projects"><i class="fa-solid fa-folder"></i> <span data-i18n="nav.projects">Проекты</span></a>
+                <a href="/blog"><i class="fa-solid fa-pen-nib"></i> <span data-i18n="nav.blog">Блог</span></a>
+                <a href="/contact"><i class="fa-solid fa-address-card"></i> <span data-i18n="nav.contact">Контакты</span></a>
+            </div>
+
+            <!-- ПРАВЫЙ БЛОК -->
+            <div class="nav-actions">
+                <button class="theme-trigger" id="globalThemeToggle" title="Переключить тему">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+
+                <div class="lang-switcher">
+                    <button id="langToggleBtn"><i class="fa-solid fa-globe"></i> <span id="currentLangLabel">RU</span></button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <a href="#" data-lang="ru">Русский</a>
+                        <a href="#" data-lang="en">English</a>
+                    </div>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
-        
-        <br>
-        
-        <div class="card">
-            <h2>Проекты</h2>
-            <p></p>
+    </nav>
+
+    <main class="container">
+        <!-- ЗАГОЛОВКИ -->
+        <section class="section">
+            <h1 class="page-title"><i class="fa-solid fa-crown"></i> <span data-i18n="home.title">Folltawn</span></h1>
+            <p class="lead" data-i18n="path.home">/home/</p>
+        </section>
+
+        <!-- КНОПКИ И БЕЙДЖИКИ -->
+        <section class="section">
+            <h2><i class="fa-regular fa-object-group"></i> <span data-i18n="title.components">Компоненты в новом стиле</span></h2>
             
-            <br><hr><br>
-            
-            <h3>Palladium (Pd)</h3>
-            <br>
-            <h5 style="display: inline;">Palladium</h5> <p style="display: inline;">— компилируемый, высокоуровневый язык программирования общего назначения.</p>
-            <br><br>
-            <p style="display: inline;">Написан на:</p> <h5 style="display: inline;">Nim</h5>
-            <br><br>
-            <p style="display: inline;">Последнее обновление:</p> <h5 style="display: inline;">02/23/2026</h5> <h6 style="display: inline;">(23.02.2026)</h6>
-            <br><br>
-            <p style="display: inline;">Версия:</p> <h5 style="display: inline;">v0.1.0</h5> <span class="badge error">alpha</span>
-            <br><br>
-            <button class="btn btn-primary" disabled>Перейти к проекту</button>
-        </div>
+            <div class="card">
+                <h3>🚀 <span data-i18n="title.buttons">Кнопки (градиент, тени, анимации)</span></h3>
+                <div class="button-group">
+                    <button class="btn btn-primary">
+                        <i class="fa-solid fa-bolt"></i> <span data-i18n="button.primary">Primary (оранж)</span>
+                    </button>
+                    <button class="btn btn-success">
+                        <i class="fa-solid fa-leaf"></i> <span data-i18n="button.success">Success (зелёный)</span>
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fa-solid fa-layer-group"></i> <span data-i18n="button.secondary">Secondary</span>
+                    </button>
+                    <button class="btn btn-outline">
+                        <i class="fa-regular fa-star"></i> <span data-i18n="button.outline">Outline</span>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="fa-solid fa-triangle-exclamation"></i> <span data-i18n="button.danger">Danger</span>
+                    </button>
+                    <button class="btn btn-link">
+                        <i class="fa-solid fa-link"></i> <span data-i18n="button.link">Link style</span>
+                    </button>
+                </div>
+
+                <h3 style="margin-top: 2rem;">🏷️ <span data-i18n="title.badges">Бейджики (тоже градиенты)</span></h3>
+                <div>
+                    <span class="badge badge-primary"><i class="fa-brands fa-react"></i> <span data-i18n="badge.react">react</span></span>
+                    <span class="badge badge-success" data-i18n="badge.version">v3.2.0</span>
+                    <span class="badge badge-warning"><i class="fa-regular fa-clock"></i> <span data-i18n="badge.beta">beta</span></span>
+                    <span class="badge badge-outline" data-i18n="badge.feature">feature</span>
+                    <span class="badge badge-secondary"><i class="fa-regular fa-star"></i> <span data-i18n="badge.stars">128</span></span>
+                    <span class="badge badge-primary"><i class="fa-brands fa-python"></i> <span data-i18n="badge.python">python</span></span>
+                    <span class="badge badge-success" data-i18n="badge.prod">production</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТЕКСТ И ССЫЛКИ -->
+        <section class="section">
+            <h2><i class="fa-regular fa-pen-to-square"></i> <span data-i18n="title.typography">Типографика и ссылки</span></h2>
+            <div class="card">
+                <p>
+                    <span data-i18n="text.example">Обычный текст, выполненный моноширинным шрифтом. Вот так выглядит</span> 
+                    <a href="#" data-i18n="text.link">обычная ссылка</a> 
+                    <span data-i18n="text.inside">внутри абзаца. А это</span> 
+                    <a href="#" class="link-arrow"><span data-i18n="text.arrow.link">ссылка с иконкой и анимацией</span> <i class="fa-solid fa-arrow-up-right-from-ml"></i></a>.
+                </p>
+                <p>
+                    <strong data-i18n="text.bold">Жирный текст.</strong> 
+                    <em data-i18n="text.italic">Курсив.</em> 
+                    <code><span data-i18n="text.code">inline code fragment (зелёный)</span></code>.
+                </p>
+                
+                <blockquote class="blockquote">
+                    <i class="fa-solid fa-quote-left" style="opacity: 0.5;"></i> 
+                    <span data-i18n="text.quote">Цитата или важное замечание. Обрамили в стильный блок с оранжевой полосой.</span>
+                </blockquote>
+                
+                <p>
+                    <span data-i18n="text.links.change">Ссылки в навигации и в тексте меняют цвет:</span> 
+                    <a href="#" data-i18n="text.orange.link">основной оранжевый</a>, 
+                    <span data-i18n="text.green.hover">при ховере — зелёный</span>.
+                </p>
+            </div>
+        </section>
+
+        <!-- ПРИМЕРЫ КАРТОЧЕК -->
+        <section class="section">
+            <div class="grid-2">
+                <div class="card">
+                    <h3><i class="fa-regular fa-moon"></i> <span data-i18n="card.dark.title">Тёмная тема</span></h3>
+                    <p data-i18n="card.dark.text">Активная тема определяется системой или переключается вручную.</p>
+                    <span class="badge badge-primary">#<span data-i18n="label.orange">оранжевый</span></span>
+                    <span class="badge badge-success">#<span data-i18n="label.green">зелёный</span></span>
+                </div>
+                <div class="card">
+                    <h3><i class="fa-regular fa-sun"></i> <span data-i18n="card.light.title">Светлая тема</span></h3>
+                    <p data-i18n="card.light.text">Все цвета продуманы для контрастности и удовольствия.</p>
+                    <button class="btn btn-outline"><span data-i18n="button.projects">Посмотреть проекты</span> <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ФИКСИРОВАННАЯ ПАЛИТРА -->
+        <section class="section">
+            <div class="card">
+                <h3><i class="fa-solid fa-palette"></i> <span data-i18n="title.palette">Наша фирменная палитра</span></h3>
+                <p>
+                    <span data-i18n="palette.main">Основные цвета:</span> 
+                    <span class="badge badge-primary"><span data-i18n="palette.orange">оранжевый #f97316</span></span> 
+                    <span data-i18n="palette.and">и</span> 
+                    <span class="badge badge-success"><span data-i18n="palette.green">зелёный #22c55e</span></span>. 
+                    <span data-i18n="palette.red.replaced">Красный заменён, всё сочетается.</span>
+                </p>
+                
+                <div style="display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                        <div style="width: 50px; height: 50px; background: #f97316; border-radius: 16px; box-shadow: 0 8px 16px rgba(249,115,22,0.3);"></div>
+                        <span><strong data-i18n="label.orange">Оранжевый</strong><br><code>#f97316</code></span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                        <div style="width: 50px; height: 50px; background: #22c55e; border-radius: 16px; box-shadow: 0 8px 16px rgba(34,197,94,0.3);"></div>
+                        <span><strong data-i18n="label.green">Зелёный</strong><br><code>#22c55e</code></span>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.8rem;">
+                        <div style="width: 50px; height: 50px; background: var(--bg-secondary); border: 2px solid var(--border-color); border-radius: 16px;"></div>
+                        <span><strong data-i18n="label.background">Фон</strong><br><span data-i18n="label.adaptive">адаптивный</span></span>
+                    </div>
+                </div>
+                
+                <p class="text-muted" style="margin-top: 1.5rem; color: var(--text-secondary);">
+                    <i class="fa-regular fa-circle-check" style="color: var(--accent-green);"></i> 
+                    <span data-i18n="palette.fixed">Цвета фиксированы и не настраиваются (как ты просил).</span>
+                </p>
+            </div>
+        </section>
+        
+        <!-- ПРИМЕР КОДА -->
+        <section class="section">
+            <div class="card">
+                <h3><i class="fa-solid fa-code"></i> <span data-i18n="title.code">Пример кода</span></h3>
+                <pre style="background: var(--bg-secondary); padding: 1.5rem; border-radius: 16px; overflow-x: auto; border: 1px solid var(--border-color);"><code style="background: transparent; border: none;" data-i18n="code.example">// Folltawn theme switcher
+const themes = ['light', 'dark', 'night'];
+let currentTheme = localStorage.getItem('theme') || 'dark';
+
+function cycleTheme() {
+    let idx = themes.indexOf(currentTheme);
+    idx = (idx + 1) % themes.length;
+    setTheme(themes[idx]);
+}</code></pre>
+                <p style="margin-top: 1rem;">
+                    <span class="badge badge-primary"><i class="fa-brands fa-js"></i> <span data-i18n="badge.typescript">typescript</span></span>
+                    <span class="badge badge-success" data-i18n="badge.version">v2.0.0</span>
+                </p>
+            </div>
+        </section>
     </main>
-    
-    
-    <script src="/res/src/nav.js"></script>
-    <script src="/res/src/theme.js"></script>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Folltawn. <i class="fa-regular fa-heart" style="color: var(--accent-orange);"></i> <span data-i18n="footer.made">Сделано для разработчиков.</span></p>
+            <p class="footer-links">
+                <a href="/404">404</a> · 
+                <a href="/403">403</a> · 
+                <a href="/500">500</a> · 
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </p>
+        </div>
+    </footer>
+
+        <!-- Скрипты -->
+    <script src="/assets/src/themes.js"></script>
+    <script src="/assets/src/nav.js"></script>
+    <script src="/assets/src/copy.js"></script>
 </body>
 </html>
